@@ -23,16 +23,3 @@ button {
   border-radius: 4px;
 }
 
-.code-block {
-  overflow: hidden;
-  height: 0;
-  transition: height 0.3s;
-}
-
-.code-block:hover {
-  height: 150px; /* 鼠标悬停时显示代码块高度 */
-}
-
-.code-block.active {
-  height: 150px; /* 点击后保持显示代码块高度 */  
-}
