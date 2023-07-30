@@ -1,33 +1,66 @@
 <!DOCTYPE html>
-<html lang="">
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>a004. 文文的求婚</title>
+<meta charset="UTF-8">
+<title>文文的求婚 - 解題報告</title>
+
+<style>
+body {
+  font-family: Arial;
+}
+
+h1, h2, h3 {
+  text-align: center; 
+}
+
+p {
+  line-height: 1.5;
+}
+
+code {
+  background: #eee;
+  padding: 2px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+}
+</style>
 
 </head>
-    <body>
-    <h1><strong style="text-align: center;">ZeroJudge_a004_文文的求婚</strong></h1>
-    ps:不想學的答案在最下面，直接看了不會變強
-    <h3>題目內容:</h3><br>
-    文文為即將出國的珊珊送行，由於珊珊不喜歡別人給文文的那個綽號，意思就是嘲笑文文不夠 聰明，但珊珊沒把握那個綽號是不是事實，所以珊珊決定考驗文文，於是告訴文文說，如果你能在 我回國之前回答我生日那年是不是閏年，則等她回國後就答應他的求婚。文文抓抓腦袋想不出來， 於是決定讓最擅長做運算的電腦來幫忙。
-    <br>
-    <br>
-    <h3>解題思路:</h3><br>
-    西元年被4整除且不被100整除，或被400整除者即為閏年<br>
-    將輸入數字帶入上述規則檢視即可<br>
-    <br>
-    <br>
-    <h2><div style="text-align: center;">先自己是看看啦<br>不懂再看解答</div></h2>
-    while True:<br>
-    &nbsp;    try:<br>
-    &nbsp;&nbsp;&nbsp;        x=int(input())<br>
-    &nbsp;&nbsp;&nbsp;        if (x%4==0 and x%100!=0) or x%400==0:<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        print("閏年")<br>
-    &nbsp;&nbsp;       else:<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        print("平年")<br>
-    &nbsp;&nbsp;    except:<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;        break<br>
-    <a href="https://zerojudge.z7.web.core.windows.net/"><button name="button">返回索引</button></a>
-    </body>
+
+<body>
+
+<h1>a004. 文文的求婚</h1>
+
+<h3>題目內容</h3><br>
+
+<p>文文為即將出國的珊珊送行,由於珊珊不喜歡別人給文文的那個綽號,意思就是嘲笑文文不夠聰明,但珊珊沒把握那個綽號是不是事實,所以珊珊決定考驗文文,於是告訴文文說,如果你能在我回國之前回答我生日那年是不是閏年,則等她回國後就答應他的求婚。文文抓抓腦袋想不出來,於是決定讓最擅長做運算的電腦來幫忙。</p>
+
+<h3>解題思路</h3>
+
+<p>西元年被4整除且不被100整除,或被400整除者即為閏年<br>
+將輸入數字帶入上述規則檢視即可</p>
+
+<h2>程式碼範例</h2>
+
+<pre><code>
+while True:
+  try:
+    x = int(input())
+    if (x%4==0 and x%100!=0) or x%400==0:
+      print("閏年")
+    else:
+      print("平年")
+  except:
+    break
+</code></pre>
+
+<button onclick="location.href='https://jason7773.github.io/ZeroJudgeReport/'">返回索引</button>
+
+</body>
 </html>
